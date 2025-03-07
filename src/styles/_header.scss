@@ -1,0 +1,22 @@
+@use 'variables' as var;
+
+.header {
+	border-bottom: 1px solid var.$accent-color;
+	box-shadow: var.$box-shadow;
+
+	&__container {
+		height: 100px;
+		display: flex;
+		flex: 1;
+		justify-content: space-between;
+	}
+
+	&__logo-wrap {
+		width: 70px;
+		height: 70px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-shrink: 0;
+	}
+}

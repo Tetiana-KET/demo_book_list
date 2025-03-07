@@ -1,0 +1,55 @@
+@use 'variables' as var;
+
+.footer {
+	border-top: 1px solid var.$accent-color;
+	box-shadow: var.$box-shadow;
+
+	&__container {
+		height: 100px;
+		padding: 10px 10%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		overflow: hidden;
+	}
+
+	.social {
+		display: flex;
+		align-items: center;
+		gap: 15px;
+
+		&__github,
+		&__linkedin {
+			display: flex;
+			align-items: center;
+			transition: all 0.5s;
+			cursor: pointer;
+
+			a {
+				display: flex;
+				align-items: center;
+				font-size: 22px;
+				text-decoration: none;
+			}
+
+			svg {
+				fill: var.$main-color;
+				transition: fill 0.3s ease;
+			}
+
+			&:hover svg {
+				fill: var.$dark-grey;
+			}
+
+			&:hover {
+				color: var.$dark-grey;
+			}
+
+			@media (max-width: 768px) {
+				&.hiddenOnMobile {
+					display: none;
+				}
+			}
+		}
+	}
+}
