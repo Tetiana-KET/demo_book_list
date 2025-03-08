@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import styles from './NavBarLink.module.scss';
 
 interface LinkProps {
 	id: string;
@@ -11,7 +12,9 @@ export function NavBarLink({ path, title }: LinkProps) {
 		<NavLink
 			to={path}
 			className={({ isActive, isPending }) =>
-				`nav__link ${isPending ? 'pending' : isActive ? 'active' : ''}`
+				`${styles.navLink} ${isPending ? styles.pending : ''} ${
+					isActive ? styles.active : ''
+				}`
 			}
 		>
 			{title}

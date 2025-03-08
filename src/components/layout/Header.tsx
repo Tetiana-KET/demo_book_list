@@ -1,17 +1,18 @@
-import { NavBar } from "./NavBar";
+import { NavBar } from './NavBar';
+import styles from './Header.module.scss';
 
 function Header() {
-
-
-    return (
-      <header className='header' >
-        <div className='header__container'>
-          <div className='header__logo-wrap'>
-            <a href="/"><img src="src/assets/book-logo.webp" alt="the logo for books app" /></a>
-          </div>
-          <NavBar />
-        </div>
-      </header>
-    )
+	return (
+		<header className={styles.header}>
+			<div className={styles.headerContainer}>
+				<div className={styles.headerLogoWrap}>
+					<a href='/'>
+						<img src='src/assets/book-logo.webp' alt='the logo for books app' />
+					</a>
+				</div>
+				<NavBar />
+			</div>
+		</header>
+	);
 }
 export default Header;

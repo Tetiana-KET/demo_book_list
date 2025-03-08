@@ -1,9 +1,11 @@
+import styles from './Footer.module.scss';
+
 export function Footer() {
 	return (
-		<footer className='footer'>
-			<div className='footer__container'>
-				<ul className='social'>
-					<li className='social__github hiddenOnMobile'>
+		<footer className={styles.footer}>
+			<div className={styles.footerContainer}>
+				<ul className={styles.social}>
+					<li className={`${styles.socialGithub} hiddenOnMobile`}>
 						<a
 							href='https://github.com/Tetiana-KET'
 							target='_blank'
@@ -12,7 +14,7 @@ export function Footer() {
 							Tetiana
 						</a>
 					</li>
-					<li className='social__github'>
+					<li className={styles.socialGithub}>
 						<a
 							href='https://github.com/Tetiana-KET'
 							target='_blank'
@@ -33,7 +35,7 @@ export function Footer() {
 						</a>
 					</li>
 				</ul>
-				<div className='social__linkedin'>
+				<div className={styles.socialLinkedin}>
 					<a
 						href='https://www.linkedin.com/in/tatiana-ket'
 						target='_blank'
