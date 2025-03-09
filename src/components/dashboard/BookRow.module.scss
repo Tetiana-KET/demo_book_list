@@ -1,0 +1,30 @@
+@use '../../styles/variables' as var;
+
+.action__buttons {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+
+	& button {
+		width: 30px;
+		height: 30px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&:first-child svg {
+			transform: scale(0.8);
+		}
+
+		&:hover svg {
+			transition: all 0.5s;
+			cursor: pointer;
+			transform: scale(1.1);
+			fill: var.$dark-grey;
+		}
+
+		&:nth-child(2):hover svg {
+			transform: scale(1.3);
+		}
+	}
+}

@@ -1,0 +1,66 @@
+@use '../../styles/variables' as var;
+
+.actions {
+	width: 100%;
+	padding: 15px 0;
+	margin: 0 auto;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	justify-content: center;
+
+	& form,
+	& select {
+		height: 50px;
+		padding: 10px;
+		border-radius: 5px;
+		border: 1px solid var.$accent-color;
+		box-shadow: var.$box-shadow;
+	}
+
+	& form {
+		position: relative;
+		flex: 1;
+
+		overflow: hidden;
+
+		& input {
+			width: 100%;
+			border: none;
+		}
+
+		& button {
+			position: absolute;
+			right: 10px;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 30px;
+			height: 30px;
+			cursor: pointer;
+
+			&:hover svg {
+				fill: var.$dark-grey;
+			}
+		}
+	}
+
+	& select {
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		cursor: pointer;
+		padding-right: 30px;
+	}
+
+	&__select-wrap {
+		position: relative;
+		&::after {
+			content: '▼';
+			position: absolute;
+			top: 50%;
+			right: 10px;
+			transform: translateY(-50%);
+			pointer-events: none;
+		}
+	}
+}
