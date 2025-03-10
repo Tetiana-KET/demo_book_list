@@ -1,7 +1,11 @@
-
 # Demo Book List
 
 This project is a **React** application to manage a book list using a fake REST API. The application supports CRUD operations and follows the REST architecture principles.
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
+![alt text](image-3.png)
+![alt text](image-4.png)
 
 ## Features
 
@@ -50,7 +54,7 @@ Ensure you have the following installed:
 
 ### Run the fake REST API server
 
-This application uses a fake REST API powered by **JSON Server**. 
+This application uses a fake REST API powered by **JSON Server**.
 
 1. **Clone** the repository for the fake server:
 
@@ -78,7 +82,7 @@ This application uses a fake REST API powered by **JSON Server**.
 
    This will start the API server on `http://localhost:3000`.
 
-5. **For the server to work, you can use the example database provided in the `db.json` file in this repository.**
+5. **For the server to work, you can use the example database provided in the `example.db.json` file in this repository.**
 
 ### Run the React app
 
@@ -104,5 +108,3 @@ You should now be able to see the **Dashboard** with all the functionalities for
 ## Limitations
 
 - No third-party libraries like **Redux**, **Axios**, **Formik**, **Yup**, **React-Hook-Form**, etc., were used as per the requirements.
-
-
