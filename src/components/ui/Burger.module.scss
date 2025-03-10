@@ -1,0 +1,60 @@
+@use '../../styles/variables' as var;
+
+.burgerMenu {
+	padding: 0;
+	display: none;
+	border: none;
+	flex: 0 0 45px;
+	height: 20px;
+	position: relative;
+	background-color: transparent;
+	cursor: pointer;
+
+	& .burgerIcon {
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		position: absolute;
+		width: 100%;
+		height: 4px;
+		background-color: transparent;
+		transition: all 0.3s ease 0s;
+
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			left: 0;
+			width: 100%;
+			height: 4px;
+			background-color: var.$main-color;
+		}
+
+		&::before {
+			top: -8px;
+		}
+
+		&::after {
+			top: 8px;
+		}
+	}
+
+	&:hover .burgerIcon::before,
+	&:hover .burgerIcon::after {
+		background-color: var.$accent-color;
+	}
+
+	&.open .burgerIcon::before {
+		transform: rotate(-45deg);
+		top: calc(50% - 2px);
+	}
+
+	&.open .burgerIcon::after {
+		transform: rotate(45deg);
+		top: calc(50% - 2px);
+	}
+
+	@media (max-width: 768px) {
+		display: block;
+	}
+}
