@@ -1,6 +1,7 @@
 import { deleteBook, fetchBooks, patchBook } from '@services/bookService';
 import { createContext, useContext, useEffect, useState } from 'react';
 import { Book } from 'src/types/Book';
+import { useNotification } from './NotificationContext';
 
 interface BookContextType {
 	books: Book[];
@@ -9,10 +10,15 @@ interface BookContextType {
 	deleteBookById: (id: number) => void;
 }
 
+interface BooksProviderType {
+	children: React.ReactNode;
+}
+
 const BooksContext = createContext<BookContextType | null>(null);
 
-export function BooksProvider({ children }: { children: React.ReactNode }) {
+export function BooksProvider({ children }: BooksProviderType) {
 	const [books, setBooks] = useState<Book[]>([]);
+	const { showMessage } = useNotification();
 
 	useEffect(() => {
 		const loadBooks = async () => {
@@ -48,9 +54,14 @@ export function BooksProvider({ children }: { children: React.ReactNode }) {
 
 	// TODO: add functionality to restore the deleted book
 	const deleteBookById = async (id: number) => {
+		const bookToDelete = books.find(book => book.id === id);
+		if (!bookToDelete) return;
+
 		setBooks(prev => prev.filter(book => book.id !== id));
+
 		try {
 			await deleteBook(id);
+			showMessage(`Book "${bookToDelete.title}" deleted successfully`);
 		} catch (err) {
 			console.error('Failed to delete book from backend:', err);
 		}
