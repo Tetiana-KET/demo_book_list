@@ -1,0 +1,28 @@
+@use '../../styles/variables' as var;
+
+.dashboard__table {
+	width: 100%;
+	border-collapse: separate;
+
+	@media (max-width: 1200px) {
+		& tbody {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 1rem;
+			width: 100%;
+			border-collapse: separate;
+		}
+		thead {
+			display: none;
+		}
+	}
+
+	@media (max-width: 900px) {
+		& tbody {
+			grid-template-columns: 1fr;
+		}
+		thead {
+			display: none;
+		}
+	}
+}

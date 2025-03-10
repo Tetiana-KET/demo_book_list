@@ -1,46 +1,24 @@
+import { useBooks } from '@context/BooksContext';
 import { BookRow } from './BookRow';
-
-const books = [
-	{
-		id: 1,
-		title: 'The Great Gatsby',
-		author: 'F. Scott Fitzgerald',
-		category: 'Fiction',
-		isbn: '9780743273565',
-		createdAt: new Date('2022-03-12T08:35:00'),
-		modifiedAt: new Date('2022-03-13T13:48:00'),
-		isActive: true,
-	},
-	{
-		id: 2,
-		title: 'To Kill a Mockingbird',
-		author: 'Harper Lee',
-		category: 'Classic',
-		isbn: '9780061120084',
-		createdAt: new Date('2022-01-15T10:20:00'),
-		modifiedAt: new Date('2022-02-10T15:30:00'),
-		isActive: false,
-	},
-];
+import styles from './DashboardTable.module.scss';
 
 export function DashboardTable() {
+	const { books } = useBooks();
 	return (
-		<table className='dashboard__table'>
+		<table className={styles.dashboardTable}>
 			<thead>
 				<tr>
-					<th>Book Title</th>
-					<th>Author Name</th>
+					<th>Title</th>
+					<th>Author</th>
 					<th>Category</th>
 					<th>ISBN</th>
-					<th>Created At</th>
-					<th>Modified At</th>
+					<th>Created</th>
+					<th>Modified</th>
 					<th>Actions</th>
 				</tr>
 			</thead>
 			<tbody>
-				{books.map(book => (
-					<BookRow key={book.id} {...book} />
-				))}
+				{books && books.map(book => <BookRow key={book.id} {...book} />)}
 			</tbody>
 		</table>
 	);

@@ -1,3 +1,8 @@
+@use './mixins.scss' as mix;
+* {
+	box-sizing: border-box;
+}
+
 :root {
 	font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 	line-height: 1.5;
@@ -10,7 +15,7 @@
 }
 
 [class*='__container'] {
-	padding: 0px 10%;
+	@include mix.container;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -26,8 +31,9 @@
 
 body {
 	margin: 0;
-	min-width: 320px;
+	min-width: 300px;
 	min-height: 100vh;
+	overflow-x: hidden;
 }
 
 img {
@@ -44,6 +50,8 @@ button {
 }
 
 .main-content-wrapper {
+	@include mix.container;
+	width: 100%;
 	flex: 1;
-	padding: 10px 10%;
+	padding: 10px 10px;
 }

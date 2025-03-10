@@ -3,11 +3,15 @@
 .actions {
 	width: 100%;
 	padding: 15px 0;
-	margin: 0 auto;
+	margin: 0 auto 20px;
 	display: flex;
 	gap: 10px;
 	align-items: center;
 	justify-content: center;
+
+	@media (max-width: 600px) {
+		flex-direction: column;
+	}
 
 	& form,
 	& select {
@@ -21,8 +25,11 @@
 	& form {
 		position: relative;
 		flex: 1;
-
 		overflow: hidden;
+
+		@media (max-width: 600px) {
+			width: 100%;
+		}
 
 		& input {
 			width: 100%;
@@ -45,6 +52,7 @@
 	}
 
 	& select {
+		width: 100%;
 		appearance: none;
 		-webkit-appearance: none;
 		-moz-appearance: none;
@@ -54,6 +62,11 @@
 
 	&__select-wrap {
 		position: relative;
+		@media (max-width: 600px) {
+			flex: 1;
+			width: 100%;
+		}
+
 		&::after {
 			content: '▼';
 			position: absolute;

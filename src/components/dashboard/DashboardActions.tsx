@@ -5,7 +5,7 @@ export function DashboardActions() {
 	const [filter, setFilter] = useState('active');
 
 	return (
-		<div className={`${styles.dashboardActions} ${styles.actions}`}>
+		<div className={styles.actions}>
 			<form action=''>
 				<input type='text' placeholder='Search a book...' />
 				<button type='submit'>

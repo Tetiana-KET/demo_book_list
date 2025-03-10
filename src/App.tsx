@@ -1,12 +1,13 @@
-
-import { RouterProvider } from 'react-router-dom'
-import './App.css'
-import router from './router/router'
+import { RouterProvider } from 'react-router-dom';
+import router from './router/router';
+import { BooksProvider } from './context/BooksContext';
 
 function App() {
-  return (
-    <RouterProvider router={router} />
-  )
+	return (
+		<BooksProvider>
+			<RouterProvider router={router} />
+		</BooksProvider>
+	);
 }
 
-export default App
+export default App;
