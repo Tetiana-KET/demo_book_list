@@ -9,7 +9,7 @@ import { useBooks } from '@context/BooksContext';
 export function BookRow(book: Book) {
 	const { id, title, author, category, isbn, createdAt, modifiedAt, isActive } =
 		book;
-	const { toggleActive } = useBooks();
+	const { toggleActive, deleteBookById } = useBooks();
 
 	const created = formatDateTime(createdAt);
 	const modified = modifiedAt ? formatDateTime(modifiedAt) : null;
@@ -26,7 +26,7 @@ export function BookRow(book: Book) {
 				<button>
 					<EditIcon />
 				</button>
-				<button>
+				<button onClick={() => deleteBookById(id)}>
 					<DeleteIcon />
 				</button>
 				<Toggler

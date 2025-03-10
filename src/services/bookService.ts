@@ -18,3 +18,12 @@ export async function patchBook(
 	if (!res.ok) throw new Error('Failed to update book');
 	return await res.json();
 }
+
+export async function deleteBook(id: number): Promise<void> {
+	const res = await fetch(`http://localhost:3000/books/${id}`, {
+		method: 'DELETE',
+	});
+	if (!res.ok) throw new Error('Failed to delete book');
+}
+
+// TODO: add errorBoundary
