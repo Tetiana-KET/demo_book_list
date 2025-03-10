@@ -4,10 +4,13 @@ import { EditIcon } from '@components/ui/EditIcon';
 import { DeleteIcon } from '@components/ui/DeleteIcon';
 import { Toggler } from '@components/ui/Toggler';
 import styles from './BookRow.module.scss';
+import { useBooks } from '@context/BooksContext';
 
 export function BookRow(book: Book) {
-	const { title, author, category, isbn, createdAt, modifiedAt, isActive } =
+	const { id, title, author, category, isbn, createdAt, modifiedAt, isActive } =
 		book;
+	const { toggleActive } = useBooks();
+
 	const created = formatDateTime(createdAt);
 	const modified = modifiedAt ? formatDateTime(modifiedAt) : null;
 
@@ -26,7 +29,11 @@ export function BookRow(book: Book) {
 				<button>
 					<DeleteIcon />
 				</button>
-				<Toggler isActive={isActive} />
+				<Toggler
+					isActive={isActive}
+					id={id}
+					onToggle={() => toggleActive(id)}
+				/>
 			</td>
 		</tr>
 	);

@@ -25,19 +25,21 @@
 		}
 	}
 
-	&.menu-open {
-		width: 100%;
-		height: 100px;
+	@media (max-width: 768px) {
+		&.menu-open {
+			width: 100%;
+			height: 100px;
 
-		&:nth-child(2) {
-			border-bottom: 1px solid var.$dark-grey;
-			border-top: 1px solid var.$dark-grey;
-		}
+			&:nth-child(2) {
+				border-bottom: 1px solid var.$dark-grey;
+				border-top: 1px solid var.$dark-grey;
+			}
 
-		@media (hover: hover) {
-			&:hover {
-				background-color: var.$medium-grey;
-				color: var.$white;
+			@media (hover: hover) {
+				&:hover {
+					background-color: var.$medium-grey;
+					color: var.$white;
+				}
 			}
 		}
 	}

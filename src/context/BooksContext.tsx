@@ -1,3 +1,4 @@
+import { fetchBooks, patchBook } from '@services/bookService';
 import { createContext, useContext, useEffect, useState } from 'react';
 import { Book } from 'src/types/Book';
 
@@ -13,18 +14,35 @@ export function BooksProvider({ children }: { children: React.ReactNode }) {
 	const [books, setBooks] = useState<Book[]>([]);
 
 	useEffect(() => {
-		fetch('http://localhost:3000/books')
-			.then(res => res.json())
-			.then(data => setBooks(data))
-			.catch(err => console.error(err));
+		const loadBooks = async () => {
+			try {
+				const data = await fetchBooks();
+				setBooks(data);
+			} catch (err) {
+				console.error('Failed to load books:', err);
+				// TODO: show a user-friendly error
+			}
+		};
+
+		loadBooks();
 	}, []);
 
-	const toggleActive = (id: number) => {
+	const toggleActive = async (id: number) => {
 		setBooks(prev =>
 			prev.map(book =>
 				book.id === id ? { ...book, isActive: !book.isActive } : book
 			)
 		);
+
+		try {
+			const book = books.find(b => b.id === id);
+			if (book) {
+				await patchBook(id, { isActive: !book.isActive });
+			}
+		} catch (error) {
+			console.error('Failed to sync with backend:', error);
+			// TODO: show a user-friendly error
+		}
 	};
 
 	return (
