@@ -13,8 +13,7 @@
 		flex-direction: column;
 	}
 
-	& form,
-	& select {
+	& form {
 		height: 50px;
 		padding: 10px;
 		border-radius: 5px;
@@ -33,6 +32,8 @@
 
 		& input {
 			width: 100%;
+			height: 100%;
+			outline: none;
 			border: none;
 		}
 
@@ -48,32 +49,6 @@
 			&:hover svg {
 				fill: var.$dark-grey;
 			}
-		}
-	}
-
-	& select {
-		width: 100%;
-		appearance: none;
-		-webkit-appearance: none;
-		-moz-appearance: none;
-		cursor: pointer;
-		padding-right: 30px;
-	}
-
-	&__select-wrap {
-		position: relative;
-		@media (max-width: 600px) {
-			flex: 1;
-			width: 100%;
-		}
-
-		&::after {
-			content: '▼';
-			position: absolute;
-			top: 50%;
-			right: 10px;
-			transform: translateY(-50%);
-			pointer-events: none;
 		}
 	}
 }

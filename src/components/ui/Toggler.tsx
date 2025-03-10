@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import styles from './Toggler.module.scss';
 
 interface TogglerProps {
@@ -7,7 +8,23 @@ interface TogglerProps {
 }
 
 export function Toggler({ isActive, onToggle, id }: TogglerProps) {
+	const [localActive, setLocalActive] = useState(isActive);
+	const [isDisabled, setIsDisabled] = useState(false);
 	const togglerId = `toggler-${id}`;
+
+	useEffect(() => {
+		setLocalActive(isActive);
+	}, [isActive]);
+
+	const handleChange = () => {
+		if (isDisabled) return;
+		setIsDisabled(true);
+		setLocalActive(prev => !prev);
+		setTimeout(() => {
+			onToggle();
+			setIsDisabled(false);
+		}, 500);
+	};
 
 	return (
 		<div className={styles.toggler}>
@@ -16,11 +33,12 @@ export function Toggler({ isActive, onToggle, id }: TogglerProps) {
 					type='checkbox'
 					id={togglerId}
 					checked={isActive}
-					onChange={onToggle}
+					disabled={isDisabled}
+					onChange={handleChange}
 				/>
 				<span
 					className={`${styles.togglerSlider} ${
-						isActive ? styles.activated : styles.deactivated
+						localActive ? styles.activated : styles.deactivated
 					}`}
 				/>
 			</label>

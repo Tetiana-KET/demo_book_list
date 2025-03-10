@@ -9,11 +9,17 @@ import { Toggler } from '@components/ui/Toggler';
 import { useBooks } from '@context/BooksContext';
 import styles from './BookRow.module.scss';
 
-export function BookRow(book: Book) {
+interface BookRowProps {
+	book: Book;
+	filter: string;
+}
+
+export function BookRow({ book, filter }: BookRowProps) {
 	const { id, title, author, category, isbn, createdAt, modifiedAt, isActive } =
 		book;
 	const { toggleActive, deleteBookById } = useBooks();
 	const [isModalOpen, setModalOpen] = useState<boolean>(false);
+	const [isDisappearing, setDisappearing] = useState(false);
 
 	const created = formatDateTime(createdAt);
 	const modified = modifiedAt ? formatDateTime(modifiedAt) : null;
@@ -31,9 +37,26 @@ export function BookRow(book: Book) {
 		setModalOpen(false);
 	};
 
+	const handleToggle = () => {
+		if (filter !== 'all') {
+			setDisappearing(true);
+
+			setTimeout(() => {
+				toggleActive(id);
+				setDisappearing(false);
+			}, 500);
+		} else {
+			toggleActive(id);
+		}
+	};
+
 	return (
 		<>
-			<tr className={styles.bookRow}>
+			<tr
+				className={`${styles.bookRow} ${
+					isDisappearing ? styles.disappearing : ''
+				}`}
+			>
 				<td data-label='Title'>{title}</td>
 				<td data-label='Author'>{author}</td>
 				<td data-label='Category'>{category}</td>
@@ -47,11 +70,7 @@ export function BookRow(book: Book) {
 					<button onClick={handleDeleteClick}>
 						<DeleteIcon />
 					</button>
-					<Toggler
-						isActive={isActive}
-						id={id}
-						onToggle={() => toggleActive(id)}
-					/>
+					<Toggler isActive={isActive} id={id} onToggle={handleToggle} />
 				</td>
 			</tr>
 			<ConfirmationModal

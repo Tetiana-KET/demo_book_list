@@ -1,9 +1,12 @@
-import { useState } from 'react';
 import styles from './DashboardActions.module.scss';
+import { Filter } from './Filter';
 
-export function DashboardActions() {
-	const [filter, setFilter] = useState('active');
+interface DashboardActions {
+	filter: string;
+	setFilter: React.Dispatch<React.SetStateAction<string>>;
+}
 
+export function DashboardActions({ filter, setFilter }: DashboardActions) {
 	return (
 		<div className={styles.actions}>
 			<form action=''>
@@ -19,18 +22,7 @@ export function DashboardActions() {
 					</svg>
 				</button>
 			</form>
-
-			<div className={styles.actionsSelectWrap}>
-				<select
-					name='filter'
-					value={filter}
-					onChange={e => setFilter(e.target.value)}
-				>
-					<option value='all'>Show All</option>
-					<option value='active'>Show Active</option>
-					<option value='deactivated'>Show Deactivated</option>
-				</select>
-			</div>
+			<Filter filter={filter} setFilter={setFilter} />
 		</div>
 	);
 }

@@ -9,6 +9,11 @@
 		cursor: pointer;
 	}
 
+	& input:disabled + .toggler__slider {
+		opacity: 0.6;
+		cursor: not-allowed;
+	}
+
 	& input {
 		opacity: 0;
 		width: 0;
@@ -35,7 +40,7 @@
 			border-radius: 50%;
 			left: 22px;
 			bottom: 2px;
-			transition: transform 0.3s ease;
+			transition: all 0.5s;
 		}
 
 		&.activated {

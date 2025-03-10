@@ -1,9 +1,13 @@
-import { useBooks } from '@context/BooksContext';
 import { BookRow } from './BookRow';
 import styles from './DashboardTable.module.scss';
+import { Book } from 'src/types/Book';
 
-export function DashboardTable() {
-	const { books } = useBooks();
+interface DashboardTableProp {
+	books: Book[];
+	filter: string;
+}
+
+export function DashboardTable({ books, filter }: DashboardTableProp) {
 	return (
 		<table className={styles.dashboardTable}>
 			<thead>
@@ -18,7 +22,10 @@ export function DashboardTable() {
 				</tr>
 			</thead>
 			<tbody>
-				{books && books.map(book => <BookRow key={book.id} {...book} />)}
+				{books &&
+					books.map(book => (
+						<BookRow key={book.id} book={book} filter={filter} />
+					))}
 			</tbody>
 		</table>
 	);
