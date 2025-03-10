@@ -10,6 +10,7 @@ function Header() {
 						<img src='src/assets/book-logo.webp' alt='the logo for books app' />
 					</a>
 				</div>
+
 				<NavBar />
 			</div>
 		</header>

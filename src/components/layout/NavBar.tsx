@@ -1,19 +1,24 @@
 import { NAV_LINKS } from '@consts/NAV_LINKS';
 import { NavBarLink } from './NavBarLink';
-
-const NavBarStyle = {
-	height: '100%',
-	display: 'flex',
-	justifyContent: 'space-between',
-	alignItems: 'center',
-};
+import styles from './NavBar.module.scss';
+import { Burger } from '@components/ui/Burger';
+import { useState } from 'react';
 
 export function NavBar() {
+	const [isMenuOpen, setMenuOpen] = useState<boolean>(true);
+	const toggleMenu = () => setMenuOpen(prev => !prev);
 	return (
-		<nav style={NavBarStyle}>
-			{NAV_LINKS.map(link => {
-				return <NavBarLink key={link.id} {...link} />;
-			})}
-		</nav>
+		<>
+			<Burger toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />
+			<nav
+				className={`${styles.navBar} ${
+					isMenuOpen ? styles.navBarOpen : styles.navBarClosed
+				}`}
+			>
+				{NAV_LINKS.map(link => {
+					return <NavBarLink key={link.id} {...link} isMenuOpen={isMenuOpen} />;
+				})}
+			</nav>
+		</>
 	);
 }

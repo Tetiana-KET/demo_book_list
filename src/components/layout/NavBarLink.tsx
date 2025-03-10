@@ -5,16 +5,17 @@ interface LinkProps {
 	id: string;
 	path: string;
 	title: string;
+	isMenuOpen: boolean;
 }
 
-export function NavBarLink({ path, title }: LinkProps) {
+export function NavBarLink({ path, title, isMenuOpen }: LinkProps) {
 	return (
 		<NavLink
 			to={path}
 			className={({ isActive, isPending }) =>
 				`${styles.navLink} ${isPending ? styles.pending : ''} ${
 					isActive ? styles.active : ''
-				}`
+				} ${isMenuOpen ? styles.menuOpen : ''}`
 			}
 		>
 			{title}

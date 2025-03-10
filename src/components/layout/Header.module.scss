@@ -11,6 +11,8 @@
 	}
 
 	&__logo-wrap {
+		position: relative;
+		z-index: 100;
 		width: 70px;
 		height: 70px;
 		display: flex;
