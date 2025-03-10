@@ -3,3 +3,18 @@
 	padding: 0 10px;
 	margin: 0 auto;
 }
+
+@mixin button-styles($bg-color) {
+	width: 90px;
+	padding: 10px 15px;
+	cursor: pointer;
+	border: none;
+	border-radius: 5px;
+	background-color: $bg-color;
+	color: white;
+	transition: all 0.5s;
+
+	&:hover {
+		background-color: darken($bg-color, 15%);
+	}
+}

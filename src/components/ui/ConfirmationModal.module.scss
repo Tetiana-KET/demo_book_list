@@ -1,0 +1,37 @@
+@use '../../styles/mixins.scss' as mix;
+@use '../../styles/variables.scss' as var;
+
+.modal__overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: var.$overlay-bg;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+}
+
+.modal__content {
+	background: var.$white;
+	padding: 20px;
+	border-radius: 8px;
+	width: 300px;
+	text-align: center;
+}
+
+.modal__actions {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+
+	.cancelButton {
+		@include mix.button-styles(var.$medium-grey);
+	}
+
+	.confirmButton {
+		@include mix.button-styles(var.$error-color);
+	}
+}
