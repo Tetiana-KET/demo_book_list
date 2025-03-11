@@ -1,4 +1,9 @@
-import { deleteBook, fetchBooks, patchBook } from '@services/bookService';
+import {
+	deleteBook,
+	fetchBooks,
+	patchBook,
+	postBook,
+} from '@services/bookService';
 import { createContext, useContext, useEffect, useState } from 'react';
 import { Book } from 'src/types/Book';
 import { useNotification } from './NotificationContext';
@@ -9,6 +14,7 @@ interface BookContextType {
 	toggleActive: (id: number) => void;
 	deleteBookById: (id: number) => void;
 	updateBook: (updatedBook: Book) => Promise<void>;
+	addBook: (newBook: Book) => Promise<void>;
 }
 
 interface BooksProviderType {
@@ -81,9 +87,26 @@ export function BooksProvider({ children }: BooksProviderType) {
 		}
 	};
 
+	const addBook = async (newBook: Book): Promise<void> => {
+		try {
+			const createdBook = await postBook(newBook);
+			setBooks(prev => [...prev, createdBook]);
+			showMessage(`Book "${createdBook.title}" added successfully`);
+		} catch (err) {
+			console.error('Failed to add book:', err);
+		}
+	};
+
 	return (
 		<BooksContext.Provider
-			value={{ books, setBooks, toggleActive, deleteBookById, updateBook }}
+			value={{
+				books,
+				setBooks,
+				toggleActive,
+				deleteBookById,
+				updateBook,
+				addBook,
+			}}
 		>
 			{children}
 		</BooksContext.Provider>

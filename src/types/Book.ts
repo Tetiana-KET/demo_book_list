@@ -4,7 +4,7 @@ export interface Book {
 	author: string;
 	category: string;
 	isbn: string;
-	createdAt: Date;
+	createdAt: Date | string | null;
 	modifiedAt: Date | string | null;
 	isActive: boolean;
 }

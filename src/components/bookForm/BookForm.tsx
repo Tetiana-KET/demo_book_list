@@ -38,6 +38,20 @@ export function BookForm({ mode, book, onSubmit }: BookFormProps) {
 			};
 			onSubmit(updatedBook);
 		}
+
+		if (mode === 'add') {
+			const newBook = {
+				id: Date.now(),
+				title,
+				author,
+				category,
+				isbn,
+				modifiedAt: null,
+				createdAt: new Date().toISOString(),
+				isActive: true,
+			};
+			onSubmit(newBook);
+		}
 	};
 
 	return (

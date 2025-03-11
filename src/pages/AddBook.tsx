@@ -1,5 +1,5 @@
-import { BookForm } from '@components/bookForm/BookForm';
+import { AddBookForm } from '@components/bookForm/AddBookForm';
 
 export function AddBook() {
-	return <BookForm />;
+	return <AddBookForm />;
 }
