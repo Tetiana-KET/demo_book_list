@@ -1,3 +1,5 @@
-export function AddBook (){
-  return <h1>AddBook</h1>
+import { BookForm } from '@components/bookForm/BookForm';
+
+export function AddBook() {
+	return <BookForm />;
 }
