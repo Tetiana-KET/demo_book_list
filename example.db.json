@@ -1,574 +1,1004 @@
 {
-  "books": [
-    {
-      "id": "43",
-      "title": "Community suddenly.",
-      "author": "David Moore",
-      "category": "Historical",
-      "isbn": "978-1-79525-368-0",
-      "createdAt": "2021-10-29T00:00:00",
-      "editedAt": "2021-09-15T00:00:00",
-      "isActive": true
-    },
-    {
-      "id": "44",
-      "title": "Condition night gas.",
-      "author": "Chad Moore",
-      "category": "Biography",
-      "isbn": "978-0-13-714034-3",
-      "createdAt": "2023-09-25T00:00:00",
-      "editedAt": "2022-11-06T00:00:00",
-      "isActive": true
-    },
-    {
-      "id": "45",
-      "title": "Government scene thus.",
-      "author": "Janet Mcgrath",
-      "category": "Historical",
-      "isbn": "978-0-317-08551-8",
-      "createdAt": "2022-12-16T00:00:00",
-      "editedAt": "2024-03-11T00:00:00",
-      "isActive": true
-    },
-    {
-      "id": "46",
-      "title": "Successful again bad.",
-      "author": "Kenneth Edwards",
-      "category": "Biography",
-      "isbn": "978-0-498-62310-3",
-      "createdAt": "2024-04-27T00:00:00",
-      "editedAt": null,
-      "isActive": false
-    },
-    {
-      "id": "47",
-      "title": "Practice staff.",
-      "author": "John Anderson",
-      "category": "Fantasy",
-      "isbn": "978-1-277-79106-8",
-      "createdAt": "2023-04-24T00:00:00",
-      "editedAt": null,
-      "isActive": false
-    },
-    {
-      "id": "49",
-      "title": "Wonder establish accept.",
-      "author": "Steven Mckenzie",
-      "category": "Classic",
-      "isbn": "978-0-446-19130-2",
-      "createdAt": "2023-10-12T00:00:00",
-      "editedAt": null,
-      "isActive": false
-    },
-    {
-      "id": "50",
-      "title": "Because arm member.",
-      "author": "James Gates",
-      "category": "Fantasy",
-      "isbn": "978-1-359-01681-2",
-      "createdAt": "2023-06-26T00:00:00",
-      "editedAt": null,
-      "isActive": true
-    },
-    {
-      "id": "51",
-      "title": "Worry local story price.",
-      "author": "Crystal Henderson",
-      "category": "Adventure",
-      "isbn": "978-0-03-752934-7",
-      "createdAt": "2022-04-08T00:00:00",
-      "editedAt": null,
-      "isActive": true
-    },
-    {
-      "id": "52",
-      "title": "Policy house.",
-      "author": "Emily Bender",
-      "category": "Adventure",
-      "isbn": "978-0-7717-0656-1",
-      "createdAt": "2023-09-15T00:00:00",
-      "editedAt": null,
-      "isActive": true
-    },
-    {
-      "id": "53",
-      "title": "Food pay good.",
-      "author": "Amy Turner",
-      "category": "Fantasy",
-      "isbn": "978-1-4675-2191-8",
-      "createdAt": "2023-05-23T00:00:00",
-      "editedAt": "2023-10-10T00:00:00",
-      "isActive": true
-    },
-    {
-      "id": "54",
-      "title": "Turn behavior.",
-      "author": "Lisa Phillips",
-      "category": "Classic",
-      "isbn": "978-0-86850-299-1",
-      "createdAt": "2020-01-15T00:00:00",
-      "editedAt": "2021-02-07T00:00:00",
-      "isActive": true
-    },
-    {
-      "id": "55",
-      "title": "Model.",
-      "author": "Donald Cook",
-      "category": "Adventure",
-      "isbn": "978-0-692-98587-8",
-      "createdAt": "2020-07-01T00:00:00",
-      "editedAt": null,
-      "isActive": false
-    },
-    {
-      "id": "56",
-      "title": "Another party.",
-      "author": "Melissa Hood",
-      "category": "Science Fiction",
-      "isbn": "978-0-626-76609-2",
-      "createdAt": "2022-01-09T00:00:00",
-      "editedAt": null,
-      "isActive": true
-    },
-    {
-      "id": "57",
-      "title": "Be old return.",
-      "author": "Kevin Stephens",
-      "category": "Dystopian",
-      "isbn": "978-0-17-404321-8",
-      "createdAt": "2021-07-18T00:00:00",
-      "editedAt": "2021-12-05T00:00:00",
-      "isActive": true
-    },
-    {
-      "id": "58",
-      "title": "Lay scientist receive.",
-      "author": "Hailey Kirby",
-      "category": "Historical",
-      "isbn": "978-0-88691-423-3",
-      "createdAt": "2024-10-21T00:00:00",
-      "editedAt": null,
-      "isActive": true
-    },
-    {
-      "id": "59",
-      "title": "He movie charge.",
-      "author": "Martha Sanchez",
-      "category": "Historical",
-      "isbn": "978-0-457-11241-9",
-      "createdAt": "2024-09-10T00:00:00",
-      "editedAt": null,
-      "isActive": false
-    },
-    {
-      "id": "60",
-      "title": "Difference final lead.",
-      "author": "Jose Green",
-      "category": "Classic",
-      "isbn": "978-0-89957-064-8",
-      "createdAt": "2023-03-24T00:00:00",
-      "editedAt": "2021-01-24T00:00:00",
-      "isActive": true
-    },
-    {
-      "id": "61",
-      "title": "Road common.",
-      "author": "Christopher Cole",
-      "category": "Adventure",
-      "isbn": "978-1-220-38543-6",
-      "createdAt": "2020-01-19T00:00:00",
-      "editedAt": null,
-      "isActive": true
-    },
-    {
-      "id": "62",
-      "title": "Low water.",
-      "author": "Thomas Jackson",
-      "category": "Fantasy",
-      "isbn": "978-0-14-197707-2",
-      "createdAt": "2023-07-06T00:00:00",
-      "editedAt": "2021-05-26T00:00:00",
-      "isActive": true
-    },
-    {
-      "id": "63",
-      "title": "Perform describe direction.",
-      "author": "Anne Lopez",
-      "category": "Biography",
-      "isbn": "978-0-15-955996-3",
-      "createdAt": "2024-02-09T00:00:00",
-      "editedAt": null,
-      "isActive": true
-    },
-    {
-      "id": "64",
-      "title": "Couple risk cultural.",
-      "author": "Gregory Salazar",
-      "category": "Fantasy",
-      "isbn": "978-0-00-420616-5",
-      "createdAt": "2022-04-25T00:00:00",
-      "editedAt": null,
-      "isActive": true
-    },
-    {
-      "id": "65",
-      "title": "Choose democratic.",
-      "author": "Allison Krueger",
-      "category": "Science Fiction",
-      "isbn": "978-0-608-20537-3",
-      "createdAt": "2021-10-15T00:00:00",
-      "editedAt": null,
-      "isActive": true
-    },
-    {
-      "id": "66",
-      "title": "Soldier paper.",
-      "author": "Victoria Rogers",
-      "category": "Adventure",
-      "isbn": "978-1-873753-90-3",
-      "createdAt": "2024-02-10T00:00:00",
-      "editedAt": null,
-      "isActive": true
-    },
-    {
-      "id": "67",
-      "title": "Unit easy fly.",
-      "author": "Brittney Mccarthy",
-      "category": "Historical",
-      "isbn": "978-0-344-04609-4",
-      "createdAt": "2022-10-20T00:00:00",
-      "editedAt": "2023-08-03T00:00:00",
-      "isActive": true
-    },
-    {
-      "id": "68",
-      "title": "Those seem.",
-      "author": "Dr. Kimberly Collins DDS",
-      "category": "Dystopian",
-      "isbn": "978-1-379-56459-1",
-      "createdAt": "2023-03-14T00:00:00",
-      "editedAt": null,
-      "isActive": true
-    },
-    {
-      "id": "69",
-      "title": "Heavy laugh option.",
-      "author": "Joel White",
-      "category": "Dystopian",
-      "isbn": "978-0-417-33438-7",
-      "createdAt": "2024-04-16T00:00:00",
-      "editedAt": null,
-      "isActive": true
-    },
-    {
-      "id": "70",
-      "title": "Fight yard young.",
-      "author": "Cassandra Anderson",
-      "category": "Dystopian",
-      "isbn": "978-1-284-57657-3",
-      "createdAt": "2024-05-08T00:00:00",
-      "editedAt": "2023-09-22T00:00:00",
-      "isActive": false
-    },
-    {
-      "id": "71",
-      "title": "Daughter team.",
-      "author": "Mark Murphy IV",
-      "category": "Fantasy",
-      "isbn": "978-1-4265-6144-3",
-      "createdAt": "2024-09-26T00:00:00",
-      "editedAt": "2021-08-25T00:00:00",
-      "isActive": true
-    },
-    {
-      "id": "72",
-      "title": "Indicate thank difference.",
-      "author": "Anna Schultz",
-      "category": "Historical",
-      "isbn": "978-1-04-097139-0",
-      "createdAt": "2022-03-04T00:00:00",
-      "editedAt": "2021-06-14T00:00:00",
-      "isActive": true
-    },
-    {
-      "id": "73",
-      "title": "Throw create.",
-      "author": "Brad Russell",
-      "category": "Dystopian",
-      "isbn": "978-1-352-47757-3",
-      "createdAt": "2021-08-21T00:00:00",
-      "editedAt": null,
-      "isActive": true
-    },
-    {
-      "id": "74",
-      "title": "Dog difference.",
-      "author": "Holly Delgado",
-      "category": "Non-fiction",
-      "isbn": "978-1-334-60655-7",
-      "createdAt": "2023-03-21T00:00:00",
-      "editedAt": "2024-10-19T00:00:00",
-      "isActive": true
-    },
-    {
-      "id": "75",
-      "title": "Performance son whom.",
-      "author": "Victor Walker",
-      "category": "Dystopian",
-      "isbn": "978-1-57943-798-5",
-      "createdAt": "2022-05-11T00:00:00",
-      "editedAt": "2024-09-28T00:00:00",
-      "isActive": true
-    },
-    {
-      "id": "76",
-      "title": "Ok help environmental.",
-      "author": "Jose Gomez",
-      "category": "Biography",
-      "isbn": "978-0-09-376028-9",
-      "createdAt": "2023-03-24T00:00:00",
-      "editedAt": "2024-06-24T00:00:00",
-      "isActive": true
-    },
-    {
-      "id": "77",
-      "title": "Three themselves prevent necessary.",
-      "author": "Robert Payne",
-      "category": "Fantasy",
-      "isbn": "978-0-417-47211-9",
-      "createdAt": "2021-05-23T00:00:00",
-      "editedAt": null,
-      "isActive": true
-    },
-    {
-      "id": "78",
-      "title": "It him meeting.",
-      "author": "Erik Coleman",
-      "category": "Biography",
-      "isbn": "978-0-8474-9939-7",
-      "createdAt": "2021-04-05T00:00:00",
-      "editedAt": null,
-      "isActive": true
-    },
-    {
-      "id": "79",
-      "title": "Always season hot production.",
-      "author": "Crystal Wright",
-      "category": "Dystopian",
-      "isbn": "978-1-68223-853-0",
-      "createdAt": "2024-01-22T00:00:00",
-      "editedAt": "2024-12-31T00:00:00",
-      "isActive": true
-    },
-    {
-      "id": "80",
-      "title": "Sense.",
-      "author": "Rodney Carpenter",
-      "category": "Biography",
-      "isbn": "978-1-77760-689-3",
-      "createdAt": "2021-07-14T00:00:00",
-      "editedAt": null,
-      "isActive": true
-    },
-    {
-      "id": "81",
-      "title": "Several hotel offer.",
-      "author": "Derek Garcia",
-      "category": "Fantasy",
-      "isbn": "978-1-176-94356-8",
-      "createdAt": "2022-03-10T00:00:00",
-      "editedAt": null,
-      "isActive": true
-    },
-    {
-      "id": "82",
-      "title": "Resource song.",
-      "author": "Cristian Ali",
-      "category": "Non-fiction",
-      "isbn": "978-0-86605-982-4",
-      "createdAt": "2023-01-29T00:00:00",
-      "editedAt": "2022-02-11T00:00:00",
-      "isActive": true
-    },
-    {
-      "id": "83",
-      "title": "World stay.",
-      "author": "Timothy Lowe",
-      "category": "Fantasy",
-      "isbn": "978-0-9844606-2-5",
-      "createdAt": "2020-02-28T00:00:00",
-      "editedAt": "2021-09-29T00:00:00",
-      "isActive": true
-    },
-    {
-      "id": "84",
-      "title": "Actually suddenly.",
-      "author": "Ricardo Thomas",
-      "category": "Historical",
-      "isbn": "978-1-07-425845-0",
-      "createdAt": "2024-05-22T00:00:00",
-      "editedAt": null,
-      "isActive": true
-    },
-    {
-      "id": "85",
-      "title": "Young south.",
-      "author": "Pamela Ward",
-      "category": "Historical",
-      "isbn": "978-1-56064-779-9",
-      "createdAt": "2020-02-28T00:00:00",
-      "editedAt": null,
-      "isActive": true
-    },
-    {
-      "id": "86",
-      "title": "Impact rule election.",
-      "author": "Sandra Martin",
-      "category": "Fantasy",
-      "isbn": "978-1-231-28838-2",
-      "createdAt": "2023-07-10T00:00:00",
-      "editedAt": null,
-      "isActive": true
-    },
-    {
-      "id": "87",
-      "title": "Even summer attention.",
-      "author": "Aaron Smith",
-      "category": "Dystopian",
-      "isbn": "978-0-395-55492-0",
-      "createdAt": "2023-07-19T00:00:00",
-      "editedAt": null,
-      "isActive": true
-    },
-    {
-      "id": "88",
-      "title": "Many already enter.",
-      "author": "Gabriella Williams",
-      "category": "Science Fiction",
-      "isbn": "978-1-927954-00-3",
-      "createdAt": "2023-11-14T00:00:00",
-      "editedAt": "2021-08-05T00:00:00",
-      "isActive": true
-    },
-    {
-      "id": "89",
-      "title": "Play citizen.",
-      "author": "Brianna Pittman",
-      "category": "Adventure",
-      "isbn": "978-1-304-34031-3",
-      "createdAt": "2024-08-19T00:00:00",
-      "editedAt": "2021-06-18T00:00:00",
-      "isActive": true
-    },
-    {
-      "id": "90",
-      "title": "Position level.",
-      "author": "Lonnie Novak",
-      "category": "Dystopian",
-      "isbn": "978-0-87053-903-9",
-      "createdAt": "2024-08-13T00:00:00",
-      "editedAt": null,
-      "isActive": true
-    },
-    {
-      "id": "91",
-      "title": "Attack according.",
-      "author": "Joann Perry",
-      "category": "Science Fiction",
-      "isbn": "978-0-05-972247-4",
-      "createdAt": "2022-07-02T00:00:00",
-      "editedAt": "2023-07-20T00:00:00",
-      "isActive": true
-    },
-    {
-      "id": "92",
-      "title": "Foreign thing see.",
-      "author": "Ashley Gallegos",
-      "category": "Historical",
-      "isbn": "978-1-61759-228-7",
-      "createdAt": "2023-06-04T00:00:00",
-      "editedAt": null,
-      "isActive": true
-    },
-    {
-      "id": "93",
-      "title": "Take.",
-      "author": "Jason Joseph",
-      "category": "Dystopian",
-      "isbn": "978-0-919763-64-7",
-      "createdAt": "2021-05-30T00:00:00",
-      "editedAt": "2023-11-24T00:00:00",
-      "isActive": false
-    },
-    {
-      "id": "94",
-      "title": "Find series.",
-      "author": "Monica Mccullough",
-      "category": "Historical",
-      "isbn": "978-0-15-238869-0",
-      "createdAt": "2023-10-24T00:00:00",
-      "editedAt": "2024-04-12T00:00:00",
-      "isActive": true
-    },
-    {
-      "id": "95",
-      "title": "Especially service.",
-      "author": "Julie Villanueva",
-      "category": "Adventure",
-      "isbn": "978-1-01-843705-7",
-      "createdAt": "2024-06-19T00:00:00",
-      "editedAt": "2022-12-16T00:00:00",
-      "isActive": true
-    },
-    {
-      "id": "96",
-      "title": "Teacher report research.",
-      "author": "Christina Edwards",
-      "category": "Fantasy",
-      "isbn": "978-1-204-52937-5",
-      "createdAt": "2024-03-28T00:00:00",
-      "editedAt": null,
-      "isActive": false
-    },
-    {
-      "id": "97",
-      "title": "Cold assume.",
-      "author": "Amanda Campbell",
-      "category": "Dystopian",
-      "isbn": "978-0-7178-5957-3",
-      "createdAt": "2021-01-29T00:00:00",
-      "editedAt": "2020-12-28T00:00:00",
-      "isActive": false
-    },
-    {
-      "id": "98",
-      "title": "Oil from.",
-      "author": "Travis Lee",
-      "category": "Dystopian",
-      "isbn": "978-1-186-16457-1",
-      "createdAt": "2021-07-17T00:00:00",
-      "editedAt": null,
-      "isActive": false
-    },
-    {
-      "id": "99",
-      "title": "Indicate physical.",
-      "author": "Catherine Lee",
-      "category": "Science Fiction",
-      "isbn": "978-1-67517-598-9",
-      "createdAt": "2021-04-22T00:00:00",
-      "editedAt": null,
-      "isActive": true
-    },
-    {
-      "id": "100",
-      "title": "Western.",
-      "author": "Kimberly Shelton",
-      "category": "Classic",
-      "isbn": "978-0-7820-2149-3",
-      "createdAt": "2021-05-29T00:00:00",
-      "editedAt": "2023-01-14T00:00:00",
-      "isActive": true
-    }
-  ]
+	"books": [
+		{
+			"id": "1",
+			"title": "Watch official early",
+			"author": "Adrian Stuart",
+			"category": "Classic",
+			"isbn": "3633826888853",
+			"createdAt": "2023-04-12",
+			"modifiedAt": null,
+			"isActive": false
+		},
+		{
+			"id": "2",
+			"title": "Shake provide",
+			"author": "Michael Miller DVM",
+			"category": "Adventure",
+			"isbn": "1689671317761",
+			"createdAt": "2022-11-30",
+			"modifiedAt": "2024-08-27T16:34:59",
+			"isActive": false
+		},
+		{
+			"id": "3",
+			"title": "Product administration service",
+			"author": "Sabrina Hernandez",
+			"category": "fantasy",
+			"isbn": "1689671317761",
+			"createdAt": "2022-06-13",
+			"modifiedAt": "2025-03-11T13:25:05.575Z",
+			"isActive": true
+		},
+		{
+			"id": "4",
+			"title": "Whom break throw society",
+			"author": "Eric Murphy",
+			"category": "Biography",
+			"isbn": "1689671317761",
+			"createdAt": "2024-06-27",
+			"modifiedAt": null,
+			"isActive": false
+		},
+		{
+			"id": "5",
+			"title": "Special task",
+			"author": "Jacqueline Knight",
+			"category": "Science",
+			"isbn": "1689671317761",
+			"createdAt": "2024-04-22",
+			"modifiedAt": "2025-01-31T03:02:23",
+			"isActive": false
+		},
+		{
+			"id": "6",
+			"title": "Need fact person",
+			"author": "Angela Murray",
+			"category": "Science",
+			"isbn": "1689671317761",
+			"createdAt": "2024-09-08",
+			"modifiedAt": null,
+			"isActive": true
+		},
+		{
+			"id": "7",
+			"title": "Ready history service",
+			"author": "George Galvan",
+			"category": "Fantasy",
+			"isbn": "8723205987421",
+			"createdAt": "2023-12-26",
+			"modifiedAt": null,
+			"isActive": true
+		},
+		{
+			"id": "8",
+			"title": "Single learn book",
+			"author": "Katherine Blair",
+			"category": "Historical",
+			"isbn": "5900721886927",
+			"createdAt": "2022-06-10",
+			"modifiedAt": "2022-12-19T02:25:51",
+			"isActive": false
+		},
+		{
+			"id": "9",
+			"title": "Meeting sign example",
+			"author": "Shawn Brown",
+			"category": "Fantasy",
+			"isbn": "4198102975433",
+			"createdAt": "2023-04-26",
+			"modifiedAt": null,
+			"isActive": false
+		},
+		{
+			"id": "10",
+			"title": "Against maintain front military",
+			"author": "Jack Gaines",
+			"category": "Classic",
+			"isbn": "5149477077103",
+			"createdAt": "2022-04-10",
+			"modifiedAt": null,
+			"isActive": false
+		},
+		{
+			"id": "11",
+			"title": "Ahead our",
+			"author": "Laurie Brown",
+			"category": "Historical",
+			"isbn": "1689671317761",
+			"createdAt": "2023-12-28",
+			"modifiedAt": "2024-09-27T21:51:39",
+			"isActive": false
+		},
+		{
+			"id": "12",
+			"title": "Chair until",
+			"author": "Nathaniel Martinez",
+			"category": "Fantasy",
+			"isbn": "1689671317761",
+			"createdAt": "2022-04-19",
+			"modifiedAt": "2024-01-26T00:47:48",
+			"isActive": true
+		},
+		{
+			"id": "13",
+			"title": "Author drop wife",
+			"author": "Wendy Jackson",
+			"category": "Biography",
+			"isbn": "23545716974788339",
+			"createdAt": "2023-11-14",
+			"modifiedAt": "2024-03-25T00:35:20",
+			"isActive": true
+		},
+		{
+			"id": "14",
+			"title": "Recent role",
+			"author": "Mrs. Monica Carter",
+			"category": "Science",
+			"isbn": "1689671317761",
+			"createdAt": "2024-11-06",
+			"modifiedAt": null,
+			"isActive": true
+		},
+		{
+			"id": "15",
+			"title": "Issue truth",
+			"author": "Thomas Oconnor",
+			"category": "Classic",
+			"isbn": "3650773580200",
+			"createdAt": "2023-07-01",
+			"modifiedAt": "2024-10-31T14:17:53",
+			"isActive": false
+		},
+		{
+			"id": "16",
+			"title": "Security technology total",
+			"author": "John Strong",
+			"category": "Science",
+			"isbn": "66836180618174864",
+			"createdAt": "2023-07-09",
+			"modifiedAt": "2024-02-10T00:44:46",
+			"isActive": true
+		},
+		{
+			"id": "17",
+			"title": "Run or",
+			"author": "Evan Kennedy",
+			"category": "Adventure",
+			"isbn": "99400751352610665",
+			"createdAt": "2022-12-11",
+			"modifiedAt": null,
+			"isActive": false
+		},
+		{
+			"id": "18",
+			"title": "Treatment record full",
+			"author": "Shawn Hernandez",
+			"category": "Classic",
+			"isbn": "42375381785450179",
+			"createdAt": "2022-07-15",
+			"modifiedAt": null,
+			"isActive": true
+		},
+		{
+			"id": "19",
+			"title": "Rich training",
+			"author": "Ashley Levy",
+			"category": "Science",
+			"isbn": "1689671317761",
+			"createdAt": "2023-11-16",
+			"modifiedAt": "2025-01-01T02:35:23",
+			"isActive": false
+		},
+		{
+			"id": "20",
+			"title": "Sport",
+			"author": "Leslie Rodriguez",
+			"category": "Non-fiction",
+			"isbn": "93485442315767718",
+			"createdAt": "2022-09-30",
+			"modifiedAt": null,
+			"isActive": true
+		},
+		{
+			"id": "21",
+			"title": "Pull media door",
+			"author": "Ryan Campbell",
+			"category": "Adventure",
+			"isbn": "6166388984714",
+			"createdAt": "2024-08-14",
+			"modifiedAt": "2024-12-18T07:36:01",
+			"isActive": true
+		},
+		{
+			"id": "22",
+			"title": "Would indeed of",
+			"author": "Lisa Hawkins",
+			"category": "Historical",
+			"isbn": "1689671317761",
+			"createdAt": "2024-09-23",
+			"modifiedAt": null,
+			"isActive": true
+		},
+		{
+			"id": "23",
+			"title": "Federal partner",
+			"author": "Bryan Fisher",
+			"category": "Science",
+			"isbn": "1689671317761",
+			"createdAt": "2023-07-10",
+			"modifiedAt": "2023-09-17T15:28:58",
+			"isActive": false
+		},
+		{
+			"id": "24",
+			"title": "Finish either perhaps",
+			"author": "Kelly Hodge",
+			"category": "Non-fiction",
+			"isbn": "1689671317761",
+			"createdAt": "2024-02-05",
+			"modifiedAt": "2024-06-08T21:14:02",
+			"isActive": true
+		},
+		{
+			"id": "25",
+			"title": "Nature",
+			"author": "Brenda Moody",
+			"category": "Classic",
+			"isbn": "6802737570321",
+			"createdAt": "2024-11-26",
+			"modifiedAt": "2024-12-05T05:39:51",
+			"isActive": false
+		},
+		{
+			"id": "26",
+			"title": "Near opportunity",
+			"author": "Danielle Brooks",
+			"category": "Biography",
+			"isbn": "1689671317761",
+			"createdAt": "2024-03-22",
+			"modifiedAt": null,
+			"isActive": false
+		},
+		{
+			"id": "27",
+			"title": "Tv factor",
+			"author": "Kevin Reynolds",
+			"category": "Historical",
+			"isbn": "46782234731442914",
+			"createdAt": "2023-07-13",
+			"modifiedAt": null,
+			"isActive": true
+		},
+		{
+			"id": "28",
+			"title": "Kid race agency",
+			"author": "Aaron Wade",
+			"category": "Adventure",
+			"isbn": "6427827066244",
+			"createdAt": "2024-05-11",
+			"modifiedAt": null,
+			"isActive": true
+		},
+		{
+			"id": "29",
+			"title": "Himself population task listen",
+			"author": "Clayton Wise",
+			"category": "Fantasy",
+			"isbn": "98261572231849320",
+			"createdAt": "2022-08-28",
+			"modifiedAt": null,
+			"isActive": false
+		},
+		{
+			"id": "30",
+			"title": "Put start be",
+			"author": "Lee Mccarthy MD",
+			"category": "Non-fiction",
+			"isbn": "8638089281563",
+			"createdAt": "2025-03-07",
+			"modifiedAt": "2025-03-10T12:10:52",
+			"isActive": false
+		},
+		{
+			"id": "31",
+			"title": "Since onto",
+			"author": "Christina Mendez",
+			"category": "Classic",
+			"isbn": "1689671317761",
+			"createdAt": "2022-08-28",
+			"modifiedAt": "2025-02-14T09:08:35",
+			"isActive": false
+		},
+		{
+			"id": "32",
+			"title": "Raise test will",
+			"author": "Jessica Davis",
+			"category": "Non-fiction",
+			"isbn": "1689671317761",
+			"createdAt": "2022-08-01",
+			"modifiedAt": null,
+			"isActive": true
+		},
+		{
+			"id": "33",
+			"title": "Newspaper stay",
+			"author": "David Miller",
+			"category": "Biography",
+			"isbn": "24957940187964695",
+			"createdAt": "2024-08-09",
+			"modifiedAt": "2024-12-15T21:49:37",
+			"isActive": false
+		},
+		{
+			"id": "34",
+			"title": "Same law",
+			"author": "Kenneth Moreno",
+			"category": "Science",
+			"isbn": "1689671317761",
+			"createdAt": "2024-07-07",
+			"modifiedAt": null,
+			"isActive": true
+		},
+		{
+			"id": "35",
+			"title": "Seek good",
+			"author": "Dawn Aguilar",
+			"category": "Classic",
+			"isbn": "20246835692459950",
+			"createdAt": "2023-09-28",
+			"modifiedAt": "2024-10-05T22:16:29",
+			"isActive": true
+		},
+		{
+			"id": "36",
+			"title": "Risk understand",
+			"author": "Emily Smith",
+			"category": "Adventure",
+			"isbn": "55439994522522096",
+			"createdAt": "2024-03-18",
+			"modifiedAt": "2024-03-23T01:25:17",
+			"isActive": true
+		},
+		{
+			"id": "37",
+			"title": "Down throw just",
+			"author": "Casey Lynn",
+			"category": "Biography",
+			"isbn": "35534297103562252",
+			"createdAt": "2022-06-02",
+			"modifiedAt": "2023-05-21T23:35:55",
+			"isActive": false
+		},
+		{
+			"id": "38",
+			"title": "Throughout read",
+			"author": "Christopher Bailey",
+			"category": "Fantasy",
+			"isbn": "1689671317761",
+			"createdAt": "2024-02-06",
+			"modifiedAt": null,
+			"isActive": false
+		},
+		{
+			"id": "39",
+			"title": "Allow TV music",
+			"author": "Maureen Campbell",
+			"category": "Classic",
+			"isbn": "1176411939580",
+			"createdAt": "2023-04-02",
+			"modifiedAt": null,
+			"isActive": true
+		},
+		{
+			"id": "40",
+			"title": "Sister until",
+			"author": "William Martinez",
+			"category": "Biography",
+			"isbn": "22655423774019629",
+			"createdAt": "2023-05-10",
+			"modifiedAt": null,
+			"isActive": true
+		},
+		{
+			"id": "41",
+			"title": "Community recent financial",
+			"author": "Maria Coleman",
+			"category": "Adventure",
+			"isbn": "4928719703592445",
+			"createdAt": "2024-02-08",
+			"modifiedAt": null,
+			"isActive": false
+		},
+		{
+			"id": "42",
+			"title": "Want suggest world",
+			"author": "Lisa Dixon",
+			"category": "Science",
+			"isbn": "1689671317761",
+			"createdAt": "2023-06-27",
+			"modifiedAt": null,
+			"isActive": true
+		},
+		{
+			"id": "43",
+			"title": "Military",
+			"author": "Raymond Davis",
+			"category": "Adventure",
+			"isbn": "7336337473287",
+			"createdAt": "2022-05-22",
+			"modifiedAt": null,
+			"isActive": true
+		},
+		{
+			"id": "44",
+			"title": "Eat cultural view",
+			"author": "Katherine Bailey",
+			"category": "Historical",
+			"isbn": "83811318395963047",
+			"createdAt": "2023-03-30",
+			"modifiedAt": null,
+			"isActive": false
+		},
+		{
+			"id": "45",
+			"title": "Commercial herself",
+			"author": "Pedro Ortega",
+			"category": "Fantasy",
+			"isbn": "1689671317761",
+			"createdAt": "2024-10-08",
+			"modifiedAt": "2025-03-09T20:37:54",
+			"isActive": true
+		},
+		{
+			"id": "46",
+			"title": "Main send",
+			"author": "John Santana",
+			"category": "Classic",
+			"isbn": "1689671317761",
+			"createdAt": "2022-08-26",
+			"modifiedAt": null,
+			"isActive": true
+		},
+		{
+			"id": "47",
+			"title": "Admit just",
+			"author": "Thomas Nelson",
+			"category": "Historical",
+			"isbn": "1689671317761",
+			"createdAt": "2024-01-22",
+			"modifiedAt": null,
+			"isActive": false
+		},
+		{
+			"id": "48",
+			"title": "End building bit phone",
+			"author": "Robert Perez",
+			"category": "Historical",
+			"isbn": "4153990276426",
+			"createdAt": "2024-06-17",
+			"modifiedAt": "2024-11-13T02:29:13",
+			"isActive": false
+		},
+		{
+			"id": "49",
+			"title": "Generation play determine",
+			"author": "Shannon Johnson",
+			"category": "Non-fiction",
+			"isbn": "1689671317761",
+			"createdAt": "2024-06-05",
+			"modifiedAt": null,
+			"isActive": false
+		},
+		{
+			"id": "50",
+			"title": "Firm",
+			"author": "Antonio Robertson",
+			"category": "Non-fiction",
+			"isbn": "7819230198618",
+			"createdAt": "2022-09-12",
+			"modifiedAt": null,
+			"isActive": false
+		},
+		{
+			"id": "51",
+			"title": "Tax three often",
+			"author": "Joseph Adams",
+			"category": "Biography",
+			"isbn": "1769724806190",
+			"createdAt": "2023-07-16",
+			"modifiedAt": null,
+			"isActive": false
+		},
+		{
+			"id": "52",
+			"title": "Figure last rich",
+			"author": "Steven Lynch",
+			"category": "Adventure",
+			"isbn": "5668434633130",
+			"createdAt": "2024-07-19",
+			"modifiedAt": "2025-01-02T21:25:01",
+			"isActive": true
+		},
+		{
+			"id": "53",
+			"title": "Cause talk",
+			"author": "Judith James MD",
+			"category": "Non-fiction",
+			"isbn": "1689671317761",
+			"createdAt": "2024-06-15",
+			"modifiedAt": null,
+			"isActive": true
+		},
+		{
+			"id": "54",
+			"title": "Sound hand it near",
+			"author": "Christina Hoffman",
+			"category": "Biography",
+			"isbn": "8906191567018791",
+			"createdAt": "2024-10-02",
+			"modifiedAt": null,
+			"isActive": false
+		},
+		{
+			"id": "55",
+			"title": "Several health",
+			"author": "Rachel Walker",
+			"category": "Biography",
+			"isbn": "55758847811708263",
+			"createdAt": "2024-02-12",
+			"modifiedAt": null,
+			"isActive": true
+		},
+		{
+			"id": "56",
+			"title": "Laugh road far",
+			"author": "Mrs. Danielle Curtis PhD",
+			"category": "Classic",
+			"isbn": "1077133510390",
+			"createdAt": "2023-02-20",
+			"modifiedAt": "2024-04-22T11:52:31",
+			"isActive": false
+		},
+		{
+			"id": "57",
+			"title": "Finish maintain",
+			"author": "Gregory Lin",
+			"category": "Adventure",
+			"isbn": "60156692665550805",
+			"createdAt": "2024-06-03",
+			"modifiedAt": null,
+			"isActive": true
+		},
+		{
+			"id": "58",
+			"title": "Vote response education",
+			"author": "Nicholas Whitney",
+			"category": "Adventure",
+			"isbn": "80488612243694988",
+			"createdAt": "2023-06-19",
+			"modifiedAt": "2024-03-12T04:53:13",
+			"isActive": false
+		},
+		{
+			"id": "59",
+			"title": "Human inside",
+			"author": "Justin Carter",
+			"category": "Fantasy",
+			"isbn": "89748314125130132",
+			"createdAt": "2023-12-17",
+			"modifiedAt": "2025-01-09T11:37:12",
+			"isActive": false
+		},
+		{
+			"id": "60",
+			"title": "Scientist different simple",
+			"author": "Shane Baxter",
+			"category": "Historical",
+			"isbn": "1689671317761",
+			"createdAt": "2025-02-02",
+			"modifiedAt": null,
+			"isActive": false
+		},
+		{
+			"id": "61",
+			"title": "Instead laugh",
+			"author": "Bradley Reyes",
+			"category": "Classic",
+			"isbn": "52931538111659477",
+			"createdAt": "2024-10-30",
+			"modifiedAt": "2025-01-05T10:33:31",
+			"isActive": false
+		},
+		{
+			"id": "62",
+			"title": "Rate direction federal",
+			"author": "Bobby Garrett",
+			"category": "Science",
+			"isbn": "22081045043621623",
+			"createdAt": "2025-02-15",
+			"modifiedAt": null,
+			"isActive": false
+		},
+		{
+			"id": "63",
+			"title": "Soon suffer game",
+			"author": "Matthew Hernandez",
+			"category": "Biography",
+			"isbn": "7118690572113",
+			"createdAt": "2023-04-14",
+			"modifiedAt": null,
+			"isActive": true
+		},
+		{
+			"id": "64",
+			"title": "Table sort",
+			"author": "Garrett Patterson",
+			"category": "Classic",
+			"isbn": "3400673937716",
+			"createdAt": "2024-07-28",
+			"modifiedAt": null,
+			"isActive": true
+		},
+		{
+			"id": "65",
+			"title": "Young light",
+			"author": "Jennifer Walker",
+			"category": "Adventure",
+			"isbn": "1689671317761",
+			"createdAt": "2023-01-26",
+			"modifiedAt": null,
+			"isActive": true
+		},
+		{
+			"id": "66",
+			"title": "President for",
+			"author": "Barbara Bush",
+			"category": "Biography",
+			"isbn": "1401508820977",
+			"createdAt": "2024-07-27",
+			"modifiedAt": "2025-01-22T22:34:02",
+			"isActive": true
+		},
+		{
+			"id": "67",
+			"title": "Indeed still",
+			"author": "Christine Hays",
+			"category": "Non-fiction",
+			"isbn": "64975392661254807",
+			"createdAt": "2025-01-12",
+			"modifiedAt": "2025-02-26T06:27:05",
+			"isActive": true
+		},
+		{
+			"id": "68",
+			"title": "Establish bring",
+			"author": "Susan Rhodes",
+			"category": "Biography",
+			"isbn": "1689671317761",
+			"createdAt": "2022-08-16",
+			"modifiedAt": "2023-07-05T15:36:47",
+			"isActive": false
+		},
+		{
+			"id": "69",
+			"title": "The important talk",
+			"author": "Thomas Miller",
+			"category": "Historical",
+			"isbn": "1689671317761",
+			"createdAt": "2024-05-03",
+			"modifiedAt": null,
+			"isActive": true
+		},
+		{
+			"id": "70",
+			"title": "Success same",
+			"author": "Joshua Mendoza",
+			"category": "Fantasy",
+			"isbn": "1689671317761",
+			"createdAt": "2023-10-19",
+			"modifiedAt": "2024-12-24T15:19:44",
+			"isActive": true
+		},
+		{
+			"id": "71",
+			"title": "Age which should",
+			"author": "Brian Davis",
+			"category": "Adventure",
+			"isbn": "5721227926198",
+			"createdAt": "2023-08-13",
+			"modifiedAt": null,
+			"isActive": false
+		},
+		{
+			"id": "72",
+			"title": "Clear area make",
+			"author": "Michelle Cooper",
+			"category": "Fantasy",
+			"isbn": "2958773915487",
+			"createdAt": "2022-08-16",
+			"modifiedAt": null,
+			"isActive": true
+		},
+		{
+			"id": "73",
+			"title": "It six military",
+			"author": "Stephanie Moore",
+			"category": "Adventure",
+			"isbn": "54163209518924752",
+			"createdAt": "2025-03-08",
+			"modifiedAt": "2025-03-09T22:39:56",
+			"isActive": true
+		},
+		{
+			"id": "74",
+			"title": "About adult stay",
+			"author": "Leah Kennedy",
+			"category": "Science",
+			"isbn": "4574854582668",
+			"createdAt": "2022-03-15",
+			"modifiedAt": null,
+			"isActive": false
+		},
+		{
+			"id": "75",
+			"title": "Court watch candidate",
+			"author": "Heather Nguyen",
+			"category": "Adventure",
+			"isbn": "98658348737268087",
+			"createdAt": "2024-10-12",
+			"modifiedAt": null,
+			"isActive": true
+		},
+		{
+			"id": "76",
+			"title": "Condition course figure",
+			"author": "David Morris",
+			"category": "Science",
+			"isbn": "63618410681518935",
+			"createdAt": "2024-11-04",
+			"modifiedAt": null,
+			"isActive": true
+		},
+		{
+			"id": "77",
+			"title": "Want",
+			"author": "Elizabeth Haynes",
+			"category": "Science",
+			"isbn": "1689671317761",
+			"createdAt": "2024-12-08",
+			"modifiedAt": "2025-02-03T23:13:00",
+			"isActive": true
+		},
+		{
+			"id": "78",
+			"title": "During apply",
+			"author": "Emily Schultz",
+			"category": "Adventure",
+			"isbn": "5930657525080",
+			"createdAt": "2024-03-01",
+			"modifiedAt": null,
+			"isActive": true
+		},
+		{
+			"id": "79",
+			"title": "Let cold conference concern",
+			"author": "Stacey Ford",
+			"category": "Historical",
+			"isbn": "2616191928417",
+			"createdAt": "2024-06-04",
+			"modifiedAt": null,
+			"isActive": false
+		},
+		{
+			"id": "80",
+			"title": "Identify hot",
+			"author": "Lindsey Garcia",
+			"category": "Biography",
+			"isbn": "1689671317761",
+			"createdAt": "2023-08-20",
+			"modifiedAt": "2024-02-01T03:02:24",
+			"isActive": false
+		},
+		{
+			"id": "81",
+			"title": "None or",
+			"author": "Jennifer Keith",
+			"category": "Classic",
+			"isbn": "23578623904312815",
+			"createdAt": "2023-08-26",
+			"modifiedAt": null,
+			"isActive": false
+		},
+		{
+			"id": "82",
+			"title": "Care land together",
+			"author": "Maurice Roman",
+			"category": "Fantasy",
+			"isbn": "1551197841136",
+			"createdAt": "2025-01-27",
+			"modifiedAt": "2025-02-06T00:38:04",
+			"isActive": true
+		},
+		{
+			"id": "83",
+			"title": "Experience system",
+			"author": "Katherine Green",
+			"category": "Biography",
+			"isbn": "1689671317761",
+			"createdAt": "2024-10-24",
+			"modifiedAt": null,
+			"isActive": false
+		},
+		{
+			"id": "84",
+			"title": "Add call way",
+			"author": "Keith Price",
+			"category": "Adventure",
+			"isbn": "6934911513561",
+			"createdAt": "2024-04-25",
+			"modifiedAt": "2025-03-02T23:50:47",
+			"isActive": false
+		},
+		{
+			"id": "85",
+			"title": "Create rule plan",
+			"author": "Raymond Martin MD",
+			"category": "Non-fiction",
+			"isbn": "7858635770305",
+			"createdAt": "2023-09-04",
+			"modifiedAt": "2024-01-21T23:25:57",
+			"isActive": true
+		},
+		{
+			"id": "86",
+			"title": "Those",
+			"author": "Randy Stephens",
+			"category": "Historical",
+			"isbn": "75622111624790118",
+			"createdAt": "2022-03-24",
+			"modifiedAt": "2023-11-17T21:22:52",
+			"isActive": false
+		},
+		{
+			"id": "87",
+			"title": "Mother sign deep",
+			"author": "Shelby Walker",
+			"category": "Science",
+			"isbn": "65473059536224764",
+			"createdAt": "2022-04-16",
+			"modifiedAt": null,
+			"isActive": true
+		},
+		{
+			"id": "88",
+			"title": "Star exist",
+			"author": "Monica Richardson",
+			"category": "Biography",
+			"isbn": "1689671317761",
+			"createdAt": "2023-12-07",
+			"modifiedAt": null,
+			"isActive": false
+		},
+		{
+			"id": "89",
+			"title": "Movie whatever treatment",
+			"author": "Brian Gray",
+			"category": "Biography",
+			"isbn": "1689671317761",
+			"createdAt": "2022-09-18",
+			"modifiedAt": null,
+			"isActive": true
+		},
+		{
+			"id": "90",
+			"title": "Family student",
+			"author": "Carol Fisher",
+			"category": "Non-fiction",
+			"isbn": "22951484199801446",
+			"createdAt": "2024-07-07",
+			"modifiedAt": "2025-02-13T02:56:20",
+			"isActive": true
+		},
+		{
+			"id": "91",
+			"title": "Morning point raise",
+			"author": "Kristy Ritter",
+			"category": "Biography",
+			"isbn": "66125549665147553",
+			"createdAt": "2024-02-12",
+			"modifiedAt": "2025-02-04T22:15:52",
+			"isActive": false
+		},
+		{
+			"id": "92",
+			"title": "Recognize ready",
+			"author": "Kevin Walker",
+			"category": "Science",
+			"isbn": "48372151275026653",
+			"createdAt": "2023-04-26",
+			"modifiedAt": null,
+			"isActive": false
+		},
+		{
+			"id": "93",
+			"title": "Management son sing",
+			"author": "Todd Wright",
+			"category": "Non-fiction",
+			"isbn": "1689671317761",
+			"createdAt": "2022-09-10",
+			"modifiedAt": "2023-08-08T17:36:00",
+			"isActive": true
+		},
+		{
+			"id": "94",
+			"title": "Loss suggest former",
+			"author": "Michelle Thomas",
+			"category": "Fantasy",
+			"isbn": "1689671317761",
+			"createdAt": "2023-04-25",
+			"modifiedAt": "2024-07-02T20:39:08",
+			"isActive": true
+		},
+		{
+			"id": "95",
+			"title": "Agency similar",
+			"author": "Paul Castro",
+			"category": "Science",
+			"isbn": "42012905328796304",
+			"createdAt": "2024-04-17",
+			"modifiedAt": "2024-04-20T16:08:36",
+			"isActive": true
+		},
+		{
+			"id": "96",
+			"title": "Own wide",
+			"author": "Amanda Roberts",
+			"category": "Adventure",
+			"isbn": "2082039656754891",
+			"createdAt": "2023-10-09",
+			"modifiedAt": null,
+			"isActive": false
+		},
+		{
+			"id": "97",
+			"title": "Computer star",
+			"author": "Mary Downs",
+			"category": "Classic",
+			"isbn": "33632096331835602",
+			"createdAt": "2023-06-22",
+			"modifiedAt": null,
+			"isActive": false
+		},
+		{
+			"id": "98",
+			"title": "His if",
+			"author": "Tommy Walker",
+			"category": "Classic",
+			"isbn": "6297459500340",
+			"createdAt": "2022-06-03",
+			"modifiedAt": "2024-02-25T10:48:27",
+			"isActive": true
+		},
+		{
+			"id": "99",
+			"title": "Pm bank per",
+			"author": "Tanya Jefferson",
+			"category": "Science",
+			"isbn": "59481817297849837",
+			"createdAt": "2022-07-22",
+			"modifiedAt": null,
+			"isActive": true
+		},
+		{
+			"id": "100",
+			"title": "Out sometimes",
+			"author": "Ruben Bryan",
+			"category": "Historical",
+			"isbn": "9506218119483",
+			"createdAt": "2025-01-28",
+			"modifiedAt": "2025-02-12T23:33:12",
+			"isActive": true
+		}
+	]
 }

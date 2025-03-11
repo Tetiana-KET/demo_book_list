@@ -1,30 +1,23 @@
 # Demo Book List
 
 This project is a **React** application to manage a book list using a fake REST API. The application supports CRUD operations and follows the REST architecture principles.
-![alt text](image.png)
+
+## [Specifications Link](https://github.com/Tetiana-KET/demo_book_list/blob/main/SPECS.md)
+
+## Features
+
+- **Dashboard** displaying a table of books with the following columns
+- Filter options to display books based on their status (Active, Deactivated, or All).
+- Add and Edit books with a form, which includes:
+- Responsive layout.
+- Sticky footer, when page content is short, with a link to the GitHub profile.
+
+![alt text](image-5.png)
+![alt text](image-6.png)
 ![alt text](image-1.png)
 ![alt text](image-2.png)
 ![alt text](image-3.png)
 ![alt text](image-4.png)
-
-## Features
-
-- **Dashboard** displaying a table of books with the following columns:
-  - Book title
-  - Author name
-  - Category
-  - ISBN
-  - Created At
-  - Modified/Edited At
-  - Actions (Edit, Delete, Deactivate/Re-Activate)
-- Filter options to display books based on their status (Active, Deactivated, or All).
-- Add and Edit books with a form, which includes:
-  - Book title (text, required)
-  - Author name (text, required)
-  - Category (select, required)
-  - ISBN (number, required)
-- Responsive layout.
-- Sticky footer, when page content is short, with a link to the GitHub profile.
 
 ## Setup
 
