@@ -5,7 +5,7 @@ import { Burger } from '@components/ui/Burger';
 import { useState } from 'react';
 
 export function NavBar() {
-	const [isMenuOpen, setMenuOpen] = useState<boolean>(true);
+	const [isMenuOpen, setMenuOpen] = useState<boolean>(false);
 	const toggleMenu = () => setMenuOpen(prev => !prev);
 	return (
 		<>

@@ -7,6 +7,8 @@ export function Dashboard() {
 	const { books } = useBooks();
 	const [filter, setFilter] = useState('active');
 
+	const [searchQuery, setSearchQuery] = useState('');
+
 	const filteredBooks = books.filter(book => {
 		switch (filter) {
 			case 'all':
@@ -18,10 +20,21 @@ export function Dashboard() {
 		}
 	});
 
+	const searchedBooks = books.filter(book =>
+		book.title.toLowerCase().includes(searchQuery.toLowerCase())
+	);
+
+	const booksToShow = searchQuery ? searchedBooks : filteredBooks;
+
 	return (
 		<>
-			<DashboardActions filter={filter} setFilter={setFilter} />
-			<DashboardTable books={filteredBooks} filter={filter} />
+			<DashboardActions
+				filter={filter}
+				setFilter={setFilter}
+				searchQuery={searchQuery}
+				setSearchQuery={setSearchQuery}
+			/>
+			<DashboardTable books={booksToShow} filter={filter} />
 		</>
 	);
 }
