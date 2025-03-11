@@ -67,7 +67,7 @@ export function BookRow({ book, filter }: BookRowProps) {
 					<button>
 						<EditIcon />
 					</button>
-					<button onClick={handleDeleteClick}>
+					<button disabled={isActive} onClick={handleDeleteClick}>
 						<DeleteIcon />
 					</button>
 					<Toggler isActive={isActive} id={id} onToggle={handleToggle} />
