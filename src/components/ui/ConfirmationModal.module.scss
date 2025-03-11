@@ -17,7 +17,7 @@
 .modal__content {
 	background: var.$white;
 	padding: 20px;
-	border-radius: 8px;
+	@include mix.border-shadow;
 	width: 300px;
 	text-align: center;
 }
