@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import { Book } from 'src/types/Book';
 import { formatDateTime } from '@utils/formatDateTime';
@@ -64,9 +65,11 @@ export function BookRow({ book, filter }: BookRowProps) {
 				<td data-label='Created'>{created}</td>
 				<td data-label='Modified'>{modified ?? '—'}</td>
 				<td data-label='Actions' className={styles.actionButtons}>
-					<button>
-						<EditIcon />
-					</button>
+					<Link to={`/editBook/${id}`}>
+						<button>
+							<EditIcon />
+						</button>
+					</Link>
 					<button disabled={isActive} onClick={handleDeleteClick}>
 						<DeleteIcon />
 					</button>

@@ -8,6 +8,7 @@ interface BookContextType {
 	setBooks: React.Dispatch<React.SetStateAction<Book[]>>;
 	toggleActive: (id: number) => void;
 	deleteBookById: (id: number) => void;
+	updateBook: (updatedBook: Book) => Promise<void>;
 }
 
 interface BooksProviderType {
@@ -52,7 +53,20 @@ export function BooksProvider({ children }: BooksProviderType) {
 		}
 	};
 
-	// TODO: add functionality to restore the deleted book
+	const updateBook = async (updatedBook: Book): Promise<void> => {
+		try {
+			const updatedFromServer = await patchBook(updatedBook.id, updatedBook);
+			showMessage(`Book "${updatedFromServer.title}" updated successfully`);
+			setBooks(prev =>
+				prev.map(book =>
+					book.id === updatedFromServer.id ? updatedFromServer : book
+				)
+			);
+		} catch (err) {
+			console.error('Failed to update book on backend:', err);
+		}
+	};
+
 	const deleteBookById = async (id: number) => {
 		const bookToDelete = books.find(book => book.id === id);
 		if (!bookToDelete) return;
@@ -69,7 +83,7 @@ export function BooksProvider({ children }: BooksProviderType) {
 
 	return (
 		<BooksContext.Provider
-			value={{ books, setBooks, toggleActive, deleteBookById }}
+			value={{ books, setBooks, toggleActive, deleteBookById, updateBook }}
 		>
 			{children}
 		</BooksContext.Provider>

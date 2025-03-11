@@ -5,6 +5,6 @@ export interface Book {
 	category: string;
 	isbn: string;
 	createdAt: Date;
-	modifiedAt: Date;
+	modifiedAt: Date | string | null;
 	isActive: boolean;
 }

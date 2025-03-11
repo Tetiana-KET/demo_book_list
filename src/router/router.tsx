@@ -1,5 +1,6 @@
 import { Layout } from '@components/layout/Layout';
 import { AddBook } from '@pages/AddBook';
+import { EditBook } from '@pages/EditBook';
 import { MainPage } from '@pages/MainPage';
 
 import { createBrowserRouter } from 'react-router-dom';
@@ -19,8 +20,8 @@ const router = createBrowserRouter([
 				element: <AddBook />,
 			},
 			{
-				path: '/editBook',
-				element: <AddBook />,
+				path: '/editBook/:id',
+				element: <EditBook />,
 			},
 		],
 	},
