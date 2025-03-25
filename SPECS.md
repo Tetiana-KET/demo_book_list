@@ -79,3 +79,7 @@
 - [ ] add debounce
 - [ ] refactor bookForm
 - [ ] add hightLight for newly created book
+- [ ] add spinner
+- [ ] when clicking on the link header, close the menu
+- [ ] move Input and Select into separate components
+- [ ] One common state could be used for the form, which would make handleSubmit cleaner as well

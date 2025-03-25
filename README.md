@@ -12,6 +12,12 @@ This project is a **React** application to manage a book list using a fake REST 
 - Responsive layout.
 - Sticky footer, when page content is short, with a link to the GitHub profile.
 
+## Extra features
+
+- Searching a book
+- Search works globally, regardless of the current filter;
+- When search is cleared, you fall back to the filtered set;
+
 ![alt text](image-5.png)
 ![alt text](image-6.png)
 ![alt text](image-1.png)
