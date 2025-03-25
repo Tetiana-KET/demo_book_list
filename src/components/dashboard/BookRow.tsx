@@ -1,14 +1,11 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 
 import { Book } from 'src/types/Book';
 import { formatDateTime } from '@utils/formatDateTime';
-import { EditIcon } from '@components/ui/EditIcon';
-import { DeleteIcon } from '@components/ui/DeleteIcon';
 import { ConfirmationModal } from '@components/ui/ConfirmationModal';
-import { Toggler } from '@components/ui/Toggler';
 import { useBooks } from '@context/BooksContext';
 import styles from './BookRow.module.scss';
+import { BookActions } from './BookActions';
 
 interface BookRowProps {
 	book: Book;
@@ -22,7 +19,7 @@ export function BookRow({ book, filter }: BookRowProps) {
 	const [isModalOpen, setModalOpen] = useState<boolean>(false);
 	const [isDisappearing, setDisappearing] = useState(false);
 
-	const created = formatDateTime(createdAt);
+	const created = createdAt ? formatDateTime(createdAt) : '—';
 	const modified = modifiedAt ? formatDateTime(modifiedAt) : null;
 
 	const handleDeleteClick = () => {
@@ -64,17 +61,13 @@ export function BookRow({ book, filter }: BookRowProps) {
 				<td data-label='ISBN'>{isbn}</td>
 				<td data-label='Created'>{created}</td>
 				<td data-label='Modified'>{modified ?? '—'}</td>
-				<td data-label='Actions' className={styles.actionButtons}>
-					<Link to={`/editBook/${id}`}>
-						<button>
-							<EditIcon />
-						</button>
-					</Link>
-					<button disabled={isActive} onClick={handleDeleteClick}>
-						<DeleteIcon />
-					</button>
-					<Toggler isActive={isActive} id={id} onToggle={handleToggle} />
-				</td>
+
+				<BookActions
+					id={id}
+					isActive={isActive}
+					onDelete={handleDeleteClick}
+					onToggle={handleToggle}
+				/>
 			</tr>
 			<ConfirmationModal
 				title={title}
