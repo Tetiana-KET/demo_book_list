@@ -1,5 +1,6 @@
-import { useBooks } from '@context/BooksContext';
 import styles from './Filter.module.scss';
+import { Select } from '@components/ui/Select';
+import { useOptionsInfo } from '@hooks/useOptionsInfo';
 
 interface FilterProps {
 	filter: string;
@@ -7,27 +8,16 @@ interface FilterProps {
 }
 
 export function Filter({ filter, setFilter }: FilterProps) {
-	const { books } = useBooks();
-
-	const allCount = books.length;
-	const activeCount = books.filter(book => book.isActive).length;
-	const deactivatedCount = allCount - activeCount;
+	const options = useOptionsInfo();
 
 	return (
 		<div className={styles.actionsSelectWrap}>
-			<select
+			<Select
 				name='filter'
 				value={filter}
-				onChange={e => setFilter(e.target.value)}
-			>
-				<option value='all'>Show All {`${allCount}/${allCount}`}</option>
-				<option value='active'>
-					Show Active {`${activeCount}/${allCount}`}
-				</option>
-				<option value='deactivated'>
-					Show Deactivated {`${deactivatedCount}/${allCount}`}
-				</option>
-			</select>
+				onChange={setFilter}
+				options={options}
+			/>
 		</div>
 	);
 }
